@@ -1,0 +1,124 @@
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; /*1 rem = 10pixel*/
+}
+*,*:before, *:after{
+    box-sizing: inherit;
+} 
+body {
+   font-family: 'Raleway',sans-serif;
+   font-size: 1.6rem;
+   line-height: 2;
+}
+/* Globales */
+h1,h2,h3 {
+    font-family: "Playfair Display", serif;
+    margin: 0 0 5rem 0;
+}
+h1{
+    font-size: 5rem;
+}
+h2{
+    font-size: 4rem;
+}
+h3 {
+    font-size: 3rem;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.contenedor {
+   max-width: 120rem; 
+   margin: 0 auto;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+.btn {
+    background-color: #8cbc00;
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 1rem;
+    transition: background-color .3s ease-out;
+}
+
+.btn:hover{
+    background-color: #769c02;
+}
+
+
+/* Utilidades */
+.text-center {
+    text-align: center;
+}
+
+/* Header y Navegacion */
+.nombre-sitio{
+    margin-top: 5rem;
+    text-align: center;
+
+
+}
+.nombre-sitio span {
+    color: #037bc0;
+}
+.contenedor-navegacion {
+    border-top:1px solid #e1e1e1;
+}
+.nav-principal{
+    padding:2rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.hero {
+    background-image: url(/PrimerProyecto/img/principal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 55rem;
+}
+
+
+/* Sobre Nosotros */
+main h2 {
+    text-align: center;
+}
+.contenido-nosotros{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+    gap: 3rem;
+}
+.contenido-nosotros img{
+    height: 30rem;
+    width: 90%;
+    object-fit: cover;
+}
+/* Footer */
+.site-footer{
+    border-top: 1px solid #e1e1e1;
+    margin-top: 5rem;
+    padding-top: 5rem;
+}
+.site-footer h3{
+    margin-bottom: .5rem;
+}
+
+.grid-footer {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+.footer-menu a{
+   display: block
+}
+.copyright{
+    margin-top: 5rem;
+    text-align: center;
+}
